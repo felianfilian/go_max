@@ -11,6 +11,9 @@ func main() {
 	returnRate := 3.7
 	var years float64 = 5
 
+	fmt.Print("Invest Amount: ")
+	fmt.Scan(&investAmount)
+
 	futureValue := investAmount * math.Pow((1+returnRate/100), years)
 	realFutureValue := futureValue / math.Pow(1+infaltionRate/100, years)
 	fmt.Print(realFutureValue)
