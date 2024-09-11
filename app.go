@@ -31,4 +31,9 @@ func PointerTest() {
 	var health = 100
 	var pHealth = &health
 	fmt.Println(pHealth)
+	fmt.Println(Calc(&health))
+}
+
+func Calc(heal *int) int {
+	return *heal + 10
 }
