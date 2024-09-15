@@ -5,7 +5,17 @@ import (
 	"math"
 )
 
+type customType string
+
+func (text customType) log() {
+	fmt.Print(text)
+}
+
 func main() {
+	var name customType = "Mario"
+	name.log()
+
+
 	// Basic tests
 	//BasicTest()
 
