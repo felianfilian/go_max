@@ -5,22 +5,23 @@ import (
 	"math"
 )
 
-type customType string
-
-func (text customType) log() {
-	fmt.Print(text)
-}
 
 func main() {
-	var name customType = "Mario"
-	name.log()
+	
+	
+	// var name customType = "Mario"
+	// name.log()
 
 
 	// Basic tests
 	//BasicTest()
 
 	// Pointers
-	PointerTest()
+	//PointerTest()
+
+	// Generics
+	Generics()
+
 }
 
 func BasicTest() {
@@ -48,4 +49,18 @@ func PointerTest() {
 
 func Calc(heal *int) int {
 	return *heal + 10
+}
+
+func Generics() {
+	myNum := add(5, 3)
+	fmt.Println(myNum)
+}
+
+func add(a, b interface{}) interface{} {
+	aInt, aIsInt := a.(int)
+	bInt, bIsInt := b.(int)
+	if aIsInt && bIsInt {
+		return aInt + bInt
+	}
+	return 0
 }
