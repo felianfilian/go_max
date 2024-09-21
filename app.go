@@ -56,11 +56,6 @@ func Generics() {
 	fmt.Println(myNum)
 }
 
-func add(a, b interface{}) interface{} {
-	aInt, aIsInt := a.(int)
-	bInt, bIsInt := b.(int)
-	if aIsInt && bIsInt {
-		return aInt + bInt
-	}
-	return 0
+func add[T int|float64](a, b T) T {
+	return a + b
 }
