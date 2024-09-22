@@ -20,7 +20,10 @@ func main() {
 	//PointerTest()
 
 	// Generics
-	Generics()
+	//Generics()
+
+	// ARrays
+	Arrays()
 
 }
 
@@ -58,4 +61,9 @@ func Generics() {
 
 func add[T int|float64](a, b T) T {
 	return a + b
+}
+
+func Arrays() {
+	myArray := [4]int{1,2,3}
+	fmt.Println(myArray)
 }
