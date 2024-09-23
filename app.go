@@ -64,6 +64,6 @@ func add[T int|float64](a, b T) T {
 }
 
 func Arrays() {
-	myArray := [4]int{1,2,3}
-	fmt.Println(myArray)
+	myArray := [4]int{1,2,3,4}
+	fmt.Println(myArray[1:3])
 }
