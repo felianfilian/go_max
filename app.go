@@ -5,13 +5,10 @@ import (
 	"math"
 )
 
-
 func main() {
-	
-	
+
 	// var name customType = "Mario"
 	// name.log()
-
 
 	// Basic tests
 	//BasicTest()
@@ -23,7 +20,10 @@ func main() {
 	//Generics()
 
 	// ARrays
-	Arrays()
+	//Arrays()
+
+	// Maps
+	Maps()
 
 }
 
@@ -59,7 +59,7 @@ func Generics() {
 	fmt.Println(myNum)
 }
 
-func add[T int|float64](a, b T) T {
+func add[T int | float64](a, b T) T {
 	return a + b
 }
 
@@ -71,4 +71,10 @@ func Arrays() {
 	newArray := []string{}
 	newArray = append(newArray, myArray...)
 	fmt.Println(newArray)
+}
+
+func Maps() {
+	websites := map[string]string{"Google": "www.google.com", "Amazon": "www.amazon.com"}
+
+	fmt.Println(websites)
 }
