@@ -74,6 +74,14 @@ func Arrays() {
 }
 
 func Maps() {
+	names := []string{}
+	names = append(names, "Mario")
+	names = append(names, "Peach")
+	for i := 0; i < len(names); i++ {
+		fmt.Println(names[i])	
+	}
+	
+
 	websites := map[string]string{"Google": "www.google.com", "Amazon": "www.amazon.com"}
 
 	fmt.Println(websites)
