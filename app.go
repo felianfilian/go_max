@@ -74,6 +74,12 @@ func Arrays() {
 }
 
 func Maps() {
+	ratings := make(map[string]float64)
+	ratings["go"] = 4.8
+	ratings["aws"] = 4.5
+
+	fmt.Println(ratings)
+
 	names := []string{}
 	names = append(names, "Mario")
 	names = append(names, "Peach")
