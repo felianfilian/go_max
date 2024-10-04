@@ -82,9 +82,4 @@ func Maps() {
 	}
 	
 
-	websites := map[string]string{"Google": "www.google.com", "Amazon": "www.amazon.com"}
-
-	fmt.Println(websites)
-	websites["facebook"] = "www.facebook.com"
-	fmt.Println(websites)
 }
