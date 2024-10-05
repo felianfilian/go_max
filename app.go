@@ -23,7 +23,10 @@ func main() {
 	//Arrays()
 
 	// Maps
-	Maps()
+	//Maps()
+
+	// functions advance
+	FunctionAD()
 
 }
 
@@ -86,6 +89,9 @@ func Maps() {
 	for i := 0; i < len(names); i++ {
 		fmt.Println(names[i])	
 	}
-	
+
+}
+
+func FunctionAD() {
 
 }
