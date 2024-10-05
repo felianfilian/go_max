@@ -93,5 +93,11 @@ func Maps() {
 }
 
 func FunctionAD() {
+	numbers := []int{1,2,3}
+	fmt.Println(numbers)
+}
 
+func doubleNums(numbers *[]int) []int {
+	dNumbers := []int{}
+	return dNumbers
 }
