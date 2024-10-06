@@ -94,10 +94,14 @@ func Maps() {
 
 func FunctionAD() {
 	numbers := []int{1,2,3}
-	fmt.Println(numbers)
+	doubled := doubleNums(&numbers)
+	fmt.Println(doubled)
 }
 
 func doubleNums(numbers *[]int) []int {
 	dNumbers := []int{}
+	for _, val := range *numbers {
+		dNumbers = append(dNumbers, val*2)
+	}
 	return dNumbers
 }
