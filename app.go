@@ -95,13 +95,15 @@ func Maps() {
 func FunctionAD() {
 	numbers := []int{1,2,3}
 	doubled := transformNums(&numbers, double)
+	tripled := transformNums(&numbers, triple)
 	fmt.Println(doubled)
+	fmt.Println(tripled)
 }
 
 func transformNums(numbers *[]int, transform func(int) int) []int {
 	dNumbers := []int{}
 	for _, val := range *numbers {
-		dNumbers = append(dNumbers, double(val))
+		dNumbers = append(dNumbers, transform(val))
 	}
 	return dNumbers
 }
