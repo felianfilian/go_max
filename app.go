@@ -116,7 +116,14 @@ func triple(number int) int {
 	return number *3
 }
 
-func transformDouble() transformNums {
-	return double()
+type transformFn func(int) int
+
+func transformDouble(numbers *[]int) transformFn {
+	if (*numbers)[0] == 1{
+		return double	
+	} else {
+		return triple
+	}
+	
 }
 
