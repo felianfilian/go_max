@@ -26,7 +26,7 @@ func main() {
 	//Maps()
 
 	// functions advance
-	FunctionAD()
+	//FunctionAD()
 
 }
 
@@ -114,5 +114,9 @@ func double(number int) int {
 
 func triple(number int) int {
 	return number *3
+}
+
+func transformDouble() transformNums {
+	return double()
 }
 
