@@ -26,7 +26,7 @@ func main() {
 	//Maps()
 
 	// functions advance
-	//FunctionAD()
+	FunctionAD()
 
 }
 
@@ -96,8 +96,10 @@ func FunctionAD() {
 	numbers := []int{1,2,3}
 	doubled := transformNums(&numbers, double)
 	tripled := transformNums(&numbers, triple)
+	transformed := transformNums(&numbers, func(number int) int { return number * 4})
 	fmt.Println(doubled)
 	fmt.Println(tripled)
+	fmt.Println(transformed)
 }
 
 func transformNums(numbers *[]int, transform func(int) int) []int {
